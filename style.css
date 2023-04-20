@@ -1,0 +1,324 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container .sidebar{
+  text-align: center;
+  align-content: center;
+  display: flex;
+  width: 15%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #4169e1;
+}
+
+.container .sidebar a{
+  display: block;
+  color: #fff;
+  padding: 18px;
+}
+
+.container .sidebar a:hover{
+  background-color: #333;
+  transition: .2s all;
+}
+
+.container .main{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.container .main h2{
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .tambah{
+  font-size: 16px;
+  font-weight: 400px;
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  background-color: #4169e1;
+  width: max-content;
+  border-radius: 5px;
+}
+
+.container .tambah:hover{
+  background-color: #333;
+  transition: .2s all;
+}
+
+.container .main table tr td a.btnUpdate, table tr td a.btnDelete{
+  display: block;
+  color:#4169e1;
+  font-size: 16px;
+}
+
+.container .main table tr td a.btnUpdate:hover, table tr td a.btnDelete:hover{
+  color:#0e2f5d;
+}
+
+.container table{
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.container table tr th{
+  color: #fff;
+  background-color: #4169e1;
+}
+
+.container table th, td{
+  font-size: 16px;
+  padding: 10px 5px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container table tr td:nth-child(5) a, .container table tr td:nth-child(6) a{
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container table tr td:nth-child(1), .container table tr th:nth-child(1){
+  width: 8%;
+}
+
+.container table tr td:nth-child(5), .container table tr td:nth-child(6), .container table tr th:nth-child(5), .container table tr th:nth-child(6){
+  width: 10%;
+} 
+
+.container .card{
+  width: 400px;
+  margin: auto auto;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.228);
+}
+
+.container .card .card-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .card .input{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .card .input input[type="text"]{
+  padding: 6px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.container .card .input label{
+  font-size: 15px;
+  font-weight: 500px;
+}
+
+.container .card button{
+  margin-top: 12px;
+  padding: 6px 20px;
+  border: 1px solid white;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.container .card button:hover{
+  background-color: #4169e1;
+  cursor: pointer;
+}
+
+.container .contact{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.container .contact a{
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  color: #2c2f42;
+  height: 80px;
+	width: 80px;
+	margin: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.container .contact a:hover{
+  transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container .contact a i{
+  font-size: 36px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.container .contact a span{
+  font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+}
+
+.container footer{
+  display: none;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 18px;
+  background-color: #4169e1;
+  color: #fff;
+}
+
+.bio {
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.bio img {
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  width: 130px;
+}
+
+.bio h4 {
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width:968px){
+  .container{
+      margin: 60px auto;
+      height: 80vh;
+  }
+
+  .container .sidebar{
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      background-color: #4169e1;
+      width: 100%;
+      height: initial;
+      font-size: 14px;
+  }
+
+  .container .sidebar a{
+      padding: 14px;
+  }
+
+  .container .main{
+      width: 600px;
+  }
+
+  .container footer{
+      display: flex;
+      font-size: 14px;
+      padding: 14px;
+  }
+
+  .container .main table tr td a.btnUpdate, .container .main table tr td a.btnDelete{
+      font-size: 14px;
+  }
+  
+  .container table th, td{
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .container .tambah{
+      padding: 8px 10px;
+      font-size: 14px;
+  }
+
+  .container .card{
+      width: 300px;
+  }
+}
+
+@media only screen and (max-width:468px){
+  .container .main{
+      max-width: 400px;
+      font-size: 12px;
+  }
+
+  .container .sidebar a{
+      padding: 12px;
+  }
+  
+  .container .main table tr td a.btnUpdate, .container .main table tr td a.btnDelete{
+      font-size: 12px;
+  }
+  
+  .container table th, td{
+      font-size: 10px;
+      padding: 5px;
+  }
+
+  .container .tambah{
+      font-size: 12px;
+      padding: 6px 8px;
+  }
+
+  .container footer{
+      /* display: flex; */
+      font-size: 12px;
+      padding: 12px;
+  }
+}
